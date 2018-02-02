@@ -1,17 +1,40 @@
+/*General Styles*/
 body {
    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+   color:#777777;
 }
 
-h1,h2 {
+a {
+    color:#777777;
+}
+
+
+
+h1,h2,h3 {
     font-family: 'Georgia', Times, "Times New Roman", serif;
+    font-weight:bold;
 }
 
 h1 {
-    font-size:3em;
+    background: #4aaaa5;
+    color:#ffffff;
+    padding:20px;
+    font-size:26pt;
 }
 
 h2{
-    font-size:2em;
+    margin-bottom:20px;
+    color:#4aaaa5;
+    border-bottom:3px solid #cccccc;
+    font-size:26pt;
+    padding-bottom:25px;
+}
+
+h3{
+    font-size:18px;
+    color:#4aaaa5;
+    border-bottom:1px solid #cccccc;
+    padding-bottom:15px;
     margin-bottom:20px;
 }
 
@@ -19,10 +42,16 @@ a{
     text-decoration:none;
 }
 
+.clear {
+    clear:both;
+}
+
+/*Header Section*/
+
 header {
     text-align:center;
     background:#ffffff;
-    border-bottom:1px solid #cccccc;
+    border-bottom:2px solid #cccccc;
     margin:auto;
     overflow:hidden;
 }
@@ -31,39 +60,101 @@ header {
     width:960px;
     margin:auto;
 }
+
+.header-container ul {
+    padding-top:10px;
+}
+.nav-menu li:not(:first-child):after{
+    padding-left:10px;
+    content: " | ";
+}
 .header-container ul li {
-    padding:20px;
+    padding:20px 10px;;
     float:right;
+    color:#cccccc;
+    
+}
+.header-container li a  {
+    color:#cccccc;
 }
 
 .header-container h1 {
     float:left;
 }
+
+.header-container a:hover{
+    color: #4aaaa5;
+}
+
+
+/*Main page*/
 .container {
     background-image: url("../images/escheresque.jpg");
 
-    clear:both;
+    
 }
+
+/*container that holds both main content area and sidebar*/
 .entire-content-area {
-    min-height:1024px;
+    min-height:950px;
     width:960px;
     margin:auto;
-
     padding-top:20px;
 }
 
+/*content area*/
+.headshot {
+    height:150px;
+    width:150px;
+    float:left;
+    margin:0 20px 20px 0;
+}
 .main-section-content{
     float:left;
-    width:650px;
+    width:588px;
+    padding:30px;
     margin-right:20px;
     height:600px;
     background:#ffffff;
+    border:1px solid #cccccc;
 
 }
 
+.main-section-content p {
+    line-height:2em;
+}
+
+/*sidebar*/
 .sidebar {
     margin-left:20px;
     float:left;
-    width:270px;
+    width:268px;
+    height:173px;
     background:#ffffff;
+    border:1px solid #cccccc;
 }
+
+.contact-images {
+    width:50px;
+    height:50px;
+}
+
+.sidebar-container {
+    text-align:center;
+    padding:25px;
+}
+
+.sidebar-container ul li {
+    display:inline;
+    padding:5px;
+}
+
+/*footer*/
+.footer {
+    height:95px;
+    background:#666666;
+    border-top:5px solid #4aaaa5;
+    text-align:center;
+ 
+}
+
