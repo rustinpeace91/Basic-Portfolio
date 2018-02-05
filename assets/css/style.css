@@ -2,6 +2,7 @@
 body {
    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
    color:#777777;
+   background-image: url("../images/escheresque.jpg");
 }
 
 a {
@@ -106,10 +107,9 @@ header {
 
 /*Main page*/
 .container {
-    background-image: url("../images/escheresque.jpg");
+
     height:100%;
     height:750px;
-    overflow:auto;
 }
 
 /*container that holds both main content area and sidebar*/
