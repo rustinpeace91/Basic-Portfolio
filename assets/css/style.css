@@ -154,7 +154,8 @@ header {
     float:left;
     width:120px;
     height:40px;
-    
+    background: #4aaaa5;
+    color:#ffffff;
 }
 
 
@@ -223,5 +224,5 @@ header {
 
 .footer-text {
     line-height:95px;
-    color:#ffffff
+    color:#ffffff;
 }
